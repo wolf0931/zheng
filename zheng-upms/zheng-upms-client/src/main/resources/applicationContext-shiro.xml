@@ -11,7 +11,7 @@
 
     <!-- Shiro的Web过滤器 -->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
-        <property name="securityManager" ref="securityManagexr"/>
+        <property name="securityManager" ref="securityManager"/>
         <property name="loginUrl" value="${zheng.upms.sso.server.url}"/>
         <property name="successUrl" value="${zheng.upms.successUrl}"/>
         <property name="unauthorizedUrl" value="${zheng.upms.unauthorizedUrl}"/>
